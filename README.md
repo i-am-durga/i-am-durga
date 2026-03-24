@@ -17,7 +17,7 @@
 class DurgaPrasad:
     name       = "Durga Prasad"
     username   = "i-am-durga"
-    location   = "India 🇮🇳"
+    location   = "Nepal"
     focus      = ["Cybersecurity Tools", "Web Development", "Network Analysis"]
     languages  = ["Python", "JavaScript", "Bash"]
     currently  = "Building Sailesh Spy — Network Traffic Analyzer"
