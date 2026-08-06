@@ -1,8 +1,8 @@
 <div align="center">
 
-# 👋 Hi, I'm Durga Prasad
+# Hi, I'm Durga Prasad
 
-### 🕵️ Cybersecurity Enthusiast | 🌐 Web Developer | 🛠️ Tool Builder
+### Cybersecurity Enthusiast | Web Developer | Tool Builder
 
 [![GitHub followers](https://img.shields.io/github/followers/i-am-durga?style=social)](https://github.com/i-am-durga)
 [![Profile Views](https://komarev.com/ghpvc/?username=i-am-durga&color=blueviolet&style=flat-square&label=Profile+Views)](https://github.com/i-am-durga)
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 About Me
+##  About Me
 
 ```python
 class DurgaPrasad:
@@ -27,7 +27,7 @@ class DurgaPrasad:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -44,7 +44,7 @@ class DurgaPrasad:
 
 ---
 
-## 📌 Featured Projects
+## Featured Projects
 
 <table>
   <tr>
@@ -86,7 +86,7 @@ class DurgaPrasad:
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
   <img height="165" src="https://github-readme-stats.vercel.app/api?username=i-am-durga&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
@@ -99,7 +99,7 @@ class DurgaPrasad:
 
 ---
 
-## 🏆 GitHub Trophies
+##  GitHub Trophies
 
 <div align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=i-am-durga&theme=tokyonight&no-frame=true&row=1&column=6"/>
@@ -107,7 +107,7 @@ class DurgaPrasad:
 
 ---
 
-## 🌐 Connect With Me
+## Connect With Me
 
 <p align="center">
   <a href="https://github.com/i-am-durga">
