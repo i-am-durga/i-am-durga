@@ -1,0 +1,206 @@
+<svg fill="none" viewBox="0 0 850 310" width="100%" height="310" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        .terminal-window {
+          background: #05080c;
+          border: 1px solid rgba(0, 255, 102, 0.4);
+          border-radius: 12px;
+          overflow: hidden;
+          font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+          color: #00ff66;
+          box-shadow: 0 0 30px rgba(0, 255, 102, 0.15), inset 0 0 25px rgba(0, 255, 102, 0.04);
+          position: relative;
+          transition: all 0.35s ease;
+        }
+        .terminal-window:hover {
+          border-color: #00ff66;
+          box-shadow: 0 0 45px rgba(0, 255, 102, 0.35), inset 0 0 40px rgba(0, 255, 102, 0.08);
+          transform: translateY(-2px);
+        }
+        /* Top Window Bar */
+        .title-bar {
+          background: #090e15;
+          border-bottom: 1px solid rgba(0, 255, 102, 0.25);
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 11px;
+          letter-spacing: 0.8px;
+        }
+        .window-dots {
+          display: flex;
+          gap: 7px;
+        }
+        .dot {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+        }
+        .dot-red { background: #ef4444; box-shadow: 0 0 6px #ef4444; }
+        .dot-yellow { background: #eab308; box-shadow: 0 0 6px #eab308; }
+        .dot-green { background: #22c55e; box-shadow: 0 0 6px #22c55e; }
+        .title-text {
+          color: #94a3b8;
+          font-size: 11.5px;
+        }
+        .status-pill {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          color: #00ffcc;
+          font-weight: 700;
+          font-size: 10.5px;
+          letter-spacing: 1px;
+        }
+        .live-indicator {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #00ff66;
+          box-shadow: 0 0 8px #00ff66;
+          animation: pulse 1.6s infinite;
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.3; transform: scale(0.8); }
+        }
+
+        /* Scanline Overlay */
+        .scanlines {
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background: linear-gradient(
+            to bottom,
+            rgba(255,255,255,0),
+            rgba(255,255,255,0) 50%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgba(0, 0, 0, 0.3)
+          );
+          background-size: 100% 4px;
+          pointer-events: none;
+        }
+
+        /* Terminal Body */
+        .terminal-body {
+          padding: 18px 20px;
+          font-size: 12.5px;
+          line-height: 1.65;
+          position: relative;
+        }
+        .prompt {
+          color: #38bdf8;
+          font-weight: 700;
+        }
+        .path {
+          color: #a855f7;
+        }
+        .cmd {
+          color: #f1f5f9;
+          font-weight: 600;
+        }
+        .out-cyan { color: #00ffcc; }
+        .out-green { color: #00ff66; }
+        .out-muted { color: #64748b; }
+        .out-gold { color: #fbbf24; }
+        .highlight {
+          color: #ffffff;
+          font-weight: 700;
+          text-shadow: 0 0 10px rgba(0, 255, 102, 0.7);
+        }
+
+        /* Grid stats inside terminal */
+        .terminal-cards {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+          margin-top: 14px;
+        }
+        .t-card {
+          background: rgba(0, 255, 102, 0.04);
+          border: 1px dashed rgba(0, 255, 102, 0.3);
+          border-radius: 6px;
+          padding: 8px 10px;
+          transition: all 0.3s ease;
+        }
+        .t-card:hover {
+          background: rgba(0, 255, 102, 0.12);
+          border-style: solid;
+          border-color: #00ff66;
+          box-shadow: 0 0 12px rgba(0, 255, 102, 0.3);
+          transform: translateY(-2px);
+        }
+        .t-card-val {
+          font-size: 13px;
+          font-weight: 700;
+          color: #00ffcc;
+        }
+        .t-card-lbl {
+          font-size: 10px;
+          color: #94a3b8;
+          margin-top: 2px;
+        }
+
+        /* Cursor */
+        .cursor {
+          display: inline-block;
+          width: 8px;
+          height: 14px;
+          background: #00ff66;
+          box-shadow: 0 0 8px #00ff66;
+          vertical-align: middle;
+          margin-left: 4px;
+          animation: blink 0.9s infinite;
+        }
+        @keyframes blink {
+          0%, 49% { opacity: 1; }
+          50%, 100% { opacity: 0; }
+        }
+      </style>
+
+      <div class="terminal-window">
+        <div class="scanlines"></div>
+        <div class="title-bar">
+          <div class="window-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="title-text">root@kali-durga: /opt/durga-security-core</div>
+          <div class="status-pill"><span class="live-indicator"></span>SHELL: TTY1</div>
+        </div>
+
+        <div class="terminal-body">
+          <div><span class="prompt">root@durga</span>:<span class="path">~</span># ./system_diagnostics.sh --full</div>
+          <div class="out-green">[+] <span class="highlight">ROOT ACCESS CONFIRMED</span> &bull; Operator: Durga Prasad (i-am-durga)</div>
+          <div class="out-cyan">[*] OS KERNEL: <span style="color:#ffffff;">Durga OS 1.0 LTS</span> [Debian Bookworm + Waydroid + Wine64]</div>
+          <div class="out-gold">[*] RECON MODULE: <span style="color:#ffffff;">Sailesh Spy</span> [Real-Time DNS &amp; HTTP Packet Sniffer]</div>
+          <div><span class="prompt">root@durga</span>:<span class="path">~</span># git status --org=ParrotSec</div>
+          <div class="out-green">[&#10004;] Upstream PRs active on ParrotSec (docker-images #20, parrot-tools #15, parrot-themes #5)</div>
+          <div><span class="prompt">root@durga</span>:<span class="path">~</span># <span class="cmd">awaiting_input</span><span class="cursor"></span></div>
+
+          <div class="terminal-cards">
+            <div class="t-card">
+              <div class="t-card-val">&#x26A1; DURGA OS</div>
+              <div class="t-card-lbl">HYBRID LINUX OS</div>
+            </div>
+            <div class="t-card">
+              <div class="t-card-val">&#x1F6E1;&#xFE0F; PARROT SEC</div>
+              <div class="t-card-lbl">CONTRIBUTOR</div>
+            </div>
+            <div class="t-card">
+              <div class="t-card-val">&#x1F50E; SAILESH SPY</div>
+              <div class="t-card-lbl">PACKET ANALYZER</div>
+            </div>
+            <div class="t-card">
+              <div class="t-card-val">&#x1F310; FULL-STACK</div>
+              <div class="t-card-lbl">PYTHON &bull; NEXT.JS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
