@@ -1,0 +1,25 @@
+<svg width="360" height="195" viewBox="0 0 360 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0.5" y="0.5" width="359" height="194" rx="10" fill="#05080c" stroke="#00ff66" stroke-opacity="0.4"/>
+  <text x="18" y="24" fill="#00ff66" font-family="'Courier New', monospace" font-size="12" font-weight="bold">TOP LANGUAGES &amp; MODULES</text>
+  <line x1="18" y1="36" x2="342" y2="36" stroke="#00ff66" stroke-opacity="0.2"/>
+  
+  <text x="18" y="58" fill="#ffffff" font-family="'Courier New', monospace" font-size="11.5">Python / Scapy</text>
+  <text x="330" y="58" fill="#00ff66" font-family="'Courier New', monospace" font-size="11.5" text-anchor="end">55%</text>
+  <rect x="18" y="65" width="310" height="6" rx="3" fill="#1e293b"/>
+  <rect x="18" y="65" width="170" height="6" rx="3" fill="#00ff66"/>
+
+  <text x="18" y="93" fill="#ffffff" font-family="'Courier New', monospace" font-size="11.5">Bash / Shell Scripting</text>
+  <text x="330" y="93" fill="#00ffcc" font-family="'Courier New', monospace" font-size="11.5" text-anchor="end">25%</text>
+  <rect x="18" y="100" width="310" height="6" rx="3" fill="#1e293b"/>
+  <rect x="18" y="100" width="80" height="6" rx="3" fill="#00ffcc"/>
+
+  <text x="18" y="128" fill="#ffffff" font-family="'Courier New', monospace" font-size="11.5">JavaScript / Next.js</text>
+  <text x="330" y="128" fill="#facc15" font-family="'Courier New', monospace" font-size="11.5" text-anchor="end">15%</text>
+  <rect x="18" y="135" width="310" height="6" rx="3" fill="#1e293b"/>
+  <rect x="18" y="135" width="48" height="6" rx="3" fill="#facc15"/>
+
+  <text x="18" y="163" fill="#ffffff" font-family="'Courier New', monospace" font-size="11.5">C / C++ &amp; Forensics</text>
+  <text x="330" y="163" fill="#ef4444" font-family="'Courier New', monospace" font-size="11.5" text-anchor="end">5%</text>
+  <rect x="18" y="170" width="310" height="6" rx="3" fill="#1e293b"/>
+  <rect x="18" y="170" width="16" height="6" rx="3" fill="#ef4444"/>
+</svg>
