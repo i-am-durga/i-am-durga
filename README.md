@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,6,12,18&height=210&section=header&text=root%40durga%3A~%23&fontSize=42&fontColor=00ff66&fontAlignY=36&desc=%E2%9A%A1+CYBERSECURITY+RESEARCHER+%7C+OS+ARCHITECT+%7C+TOOL+BUILDER&descAlignY=62&descSize=16&descAlign=50" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,6,12,18&height=210&section=header&text=root%40durga%3A~%23&fontSize=42&fontColor=00ff66&fontAlignY=36&desc=%E2%9A%A1+CYBERSECURITY+RESEARCHER+%7C+WEB+DEVELOPER+%7C+TOOL+BUILDER&descAlignY=62&descSize=16&descAlign=50" width="100%"/>
 </div>
 
 <div align="center">
   <a href="https://github.com/i-am-durga">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=2600&pause=700&color=00FF66&center=true&vCenter=true&width=720&lines=root%40durga%3A~%23+whoami+%E2%86%92+Cybersecurity+Researcher;root%40durga%3A~%23+uname+-a+%E2%86%92+Durga+OS+1.0+LTS+Bookworm;root%40durga%3A~%23+git+pull+upstream+%E2%86%92+ParrotSec+Contributor;root%40durga%3A~%23+python3+sailesh_spy.py+--live-sniff" alt="Matrix Terminal Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=2600&pause=700&color=00FF66&center=true&vCenter=true&width=720&lines=root%40durga%3A~%23+whoami+%E2%86%92+Cybersecurity+Researcher;root%40durga%3A~%23+python3+sailesh_spy.py+--live-sniff;root%40durga%3A~%23+git+pull+upstream+%E2%86%92+ParrotSec+Contributor;root%40durga%3A~%23+cat+%2Fetc%2Fmotd+%E2%86%92+Ethical+Hacker+%26+Tool+Builder" alt="Matrix Terminal Typing SVG" />
   </a>
 </div>
 
@@ -16,24 +16,18 @@
 
 ---
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/i-am-durga/i-am-durga/main/assets/hacker-terminal.svg" width="100%" alt="Cyberpunk Matrix Hacker Terminal"/>
-</div>
-
----
-
 ## 💻 `neofetch` System Profiler
 
 ```
        _,met$$$$$gg.          durga@kali-core
     ,g$$$$$$$$$$$$$$$P.       ---------------
-  ,g$$P" ""   """Y$$.".       OS: Durga OS 1.0 LTS (Debian 12 Bookworm)
+  ,g$$P" ""   """Y$$.".       Operator: Durga Prasad (i-am-durga)
  ,$$P'              `$$$.     Host: Kali Linux / Parrot Security Workstation
-',$$P       ,ggs.     `$$b:   Kernel: 6.1.0-hardened-bookworm-amd64
+',$$P       ,ggs.     `$$b:   Kernel: Linux 6.1.0-hardened-amd64
 `d$$'     ,$P"'   .    $$$    Uptime: 24/7 [Threat Hunting]
  $$P      d$'     ,    $$P    Shell: zsh / bash
- $$:      $$.   -    ,d$$'    DE: KDE Plasma Glassmorphism
- $$\;      Y$b._   _,d$P'     Compat: Wine64 (.exe) + Waydroid (.apk)
+ $$:      $$.   -    ,d$$'    Focus: Cybersecurity, Network Sniffing & Web Dev
+ $$\;      Y$b._   _,d$P'     Languages: Python, Bash, JavaScript, React, Next.js
  Y$$.    `.`"Y$$$$P"'         Tools: Scapy, Wireshark, Docker, Nmap, Tor
   `$$b      "-.__             Status: Upstream Contributor @ ParrotSec
    `Y$$                       Location: Nepal 🇳🇵
@@ -41,25 +35,25 @@
 
 ---
 
-## ⚡ Active Deployments & Exploit Suite
+## ⚡ Active Deployments & Security Tools
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🛸 <code>./durga-os.iso</code></h3>
+      <h3 align="center">🕵️ <code>./sailesh-spy.py</code></h3>
       <p align="center">
-        <a href="https://github.com/i-am-durga/durga-os">
-          <img src="https://img.shields.io/badge/Clone_OS_Kernel-00ff66?style=for-the-badge&logo=debian&logoColor=black"/>
+        <a href="https://github.com/i-am-durga/saileshspy">
+          <img src="https://img.shields.io/badge/Sniff_Packets-22c55e?style=for-the-badge&logo=python&logoColor=black"/>
         </a>
       </p>
       <p>
-        <b>Next-Gen Hybrid Debian Linux Distro</b> combining <b>macOS Glassmorphism aesthetics</b>, native <b>Windows .exe execution</b> (Wine64), and <b>Android .apk app support</b> (Waydroid containerization). Fully hardened with AppArmor, UFW, and automated WSL2/QEMU/VirtualBox build pipelines.
+        <b>Kali Linux Network Traffic Sniffer</b>. Captures raw network packets in real-time, extracting unencrypted DNS queries and HTTP requests to reveal visited domains per client IP with a live web surveillance dashboard.
       </p>
       <p align="center">
-        <img src="https://img.shields.io/badge/Debian_12-A81D33?style=flat-square&logo=debian&logoColor=white"/>
-        <img src="https://img.shields.io/badge/KDE_Plasma-1D99F3?style=flat-square&logo=kde&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Wine64-800000?style=flat-square&logo=wine&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Live--Build-00ff66?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Scapy-00ffcc?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -85,20 +79,20 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">🕵️ <code>./sailesh-spy.py</code></h3>
+      <h3 align="center">🛸 <code>./durga-os.iso</code></h3>
       <p align="center">
-        <a href="https://github.com/i-am-durga/saileshspy">
-          <img src="https://img.shields.io/badge/Sniff_Packets-22c55e?style=for-the-badge&logo=python&logoColor=black"/>
+        <a href="https://github.com/i-am-durga/durga-os">
+          <img src="https://img.shields.io/badge/Explore_Repo-00ff66?style=for-the-badge&logo=debian&logoColor=black"/>
         </a>
       </p>
       <p>
-        <b>Kali Linux Network Traffic Sniffer</b>. Captures raw network packets in real-time, decrypting client destination URLs from unencrypted DNS queries and HTTP headers with a live visual web dashboard.
+        <b>Custom Hybrid Debian Linux System</b> combining macOS glassmorphism aesthetics, native Windows <code>.exe</code> execution (Wine64), and Android <code>.apk</code> support (Waydroid) with automated build and virtualization pipelines.
       </p>
       <p align="center">
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Scapy-00ffcc?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=flat-square&logo=kalilinux&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Debian_12-A81D33?style=flat-square&logo=debian&logoColor=white"/>
+        <img src="https://img.shields.io/badge/KDE_Plasma-1D99F3?style=flat-square&logo=kde&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Wine64-800000?style=flat-square&logo=wine&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Live--Build-00ff66?style=flat-square"/>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -125,7 +119,7 @@
 ## 🧰 `cat /etc/security_arsenal.conf`
 
 <details open>
-<summary><b>🛠️ [EXPLOITATION, RECONNAISSANCE & ARCHITECTURE TOOLSET] (Click to Toggle)</b></summary>
+<summary><b>🛠️ [EXPLOITATION, RECONNAISSANCE & DEVELOPMENT TOOLSET] (Click to Toggle)</b></summary>
 <br/>
 
 #### 🛡️ Cybersecurity, Sniffing & Exploitation
@@ -139,7 +133,7 @@
   <img src="https://img.shields.io/badge/Nmap-4682B4?style=for-the-badge"/>
 </p>
 
-#### 🐧 Operating Systems & Virtualization
+#### 🐧 Operating Systems & Environments
 <p align="left">
   <img src="https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white"/>
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
@@ -162,7 +156,7 @@
 
 ---
 
-## 📊 Matrix Telemetry & Terminal Metrics
+## 📊 Matrix Telemetry & Metrics
 
 <div align="center">
   <img height="175" src="https://github-readme-stats.vercel.app/api?username=i-am-durga&show_icons=true&hide_border=true&count_private=true&title_color=00ff66&icon_color=00ff66&text_color=e2e8f0&bg_color=05080c" alt="Matrix Stats"/>
