@@ -159,8 +159,8 @@
 ## 📊 Matrix Telemetry & Metrics
 
 <div align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=i-am-durga&show_icons=true&hide_border=true&count_private=true&title_color=00ff66&icon_color=00ff66&text_color=e2e8f0&bg_color=05080c" alt="Matrix Stats"/>
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=i-am-durga&layout=compact&hide_border=true&title_color=00ff66&text_color=e2e8f0&bg_color=05080c" alt="Language Matrix"/>
+  <img src="https://raw.githubusercontent.com/i-am-durga/i-am-durga/main/assets/matrix-stats.svg" alt="Matrix Security Stats"/>
+  <img src="https://raw.githubusercontent.com/i-am-durga/i-am-durga/main/assets/matrix-languages.svg" alt="Top Languages Matrix"/>
 </div>
 
 <br/>
