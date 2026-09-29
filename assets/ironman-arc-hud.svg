@@ -1,0 +1,280 @@
+<svg fill="none" viewBox="0 0 850 320" width="100%" height="320" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { box-sizing: border-box; }
+        .ironman-hud {
+          background: radial-gradient(circle at 20% 50%, rgba(13, 27, 42, 0.95), #06090e 70%);
+          border: 1px solid rgba(0, 242, 254, 0.35);
+          border-radius: 18px;
+          padding: 22px 28px;
+          font-family: 'Consolas', 'Courier New', monospace, sans-serif;
+          color: #e0f2fe;
+          position: relative;
+          overflow: hidden;
+          box-shadow: 0 0 35px rgba(0, 242, 254, 0.15), inset 0 0 40px rgba(0, 242, 254, 0.05);
+          transition: all 0.4s ease;
+        }
+        .ironman-hud:hover {
+          border-color: #00f2fe;
+          box-shadow: 0 0 45px rgba(0, 242, 254, 0.35), inset 0 0 50px rgba(220, 38, 38, 0.15);
+          transform: translateY(-2px);
+        }
+        /* Corner Brackets */
+        .corner {
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          border-color: #00f2fe;
+          pointer-events: none;
+        }
+        .tl { top: 8px; left: 8px; border-top: 2px solid #00f2fe; border-left: 2px solid #00f2fe; }
+        .tr { top: 8px; right: 8px; border-top: 2px solid #00f2fe; border-right: 2px solid #00f2fe; }
+        .bl { bottom: 8px; left: 8px; border-bottom: 2px solid #00f2fe; border-left: 2px solid #00f2fe; }
+        .br { bottom: 8px; right: 8px; border-bottom: 2px solid #00f2fe; border-right: 2px solid #00f2fe; }
+
+        /* Grid Background & Scanlines */
+        .grid {
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background-size: 26px 26px;
+          background-image: 
+            linear-gradient(to right, rgba(0, 242, 254, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(0, 242, 254, 0.04) 1px, transparent 1px);
+          pointer-events: none;
+        }
+        .scanline {
+          position: absolute;
+          top: 0; left: 0; width: 100%; height: 2px;
+          background: linear-gradient(90deg, transparent, #00f2fe, #ff3b30, transparent);
+          box-shadow: 0 0 10px #00f2fe;
+          animation: sweep 3.5s infinite linear;
+          opacity: 0.7;
+          pointer-events: none;
+        }
+        @keyframes sweep {
+          0% { top: 0%; opacity: 0.1; }
+          50% { opacity: 0.8; }
+          100% { top: 100%; opacity: 0.1; }
+        }
+
+        /* Top HUD Bar */
+        .hud-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(0, 242, 254, 0.2);
+          padding-bottom: 10px;
+          margin-bottom: 16px;
+          font-size: 11px;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+        }
+        .stark-tag {
+          color: #ff3b30;
+          font-weight: 800;
+          text-shadow: 0 0 10px rgba(255, 59, 48, 0.6);
+        }
+        .arc-tag {
+          color: #00f2fe;
+          font-weight: 700;
+          text-shadow: 0 0 8px rgba(0, 242, 254, 0.6);
+        }
+
+        /* Main layout: Reactor + Info */
+        .hud-body {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+        }
+
+        /* Arc Reactor SVG animation */
+        .reactor-box {
+          position: relative;
+          width: 170px;
+          height: 170px;
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .ring-outer {
+          position: absolute;
+          width: 160px;
+          height: 160px;
+          border: 2px dashed rgba(0, 242, 254, 0.6);
+          border-radius: 50%;
+          animation: spin-cw 12s infinite linear;
+          box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+        }
+        .ring-mid {
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          border: 2px dotted #ff3b30;
+          border-radius: 50%;
+          animation: spin-ccw 8s infinite linear;
+        }
+        .ring-inner {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          border: 3px solid #00f2fe;
+          border-radius: 50%;
+          animation: spin-cw 5s infinite linear;
+        }
+        .arc-core {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: radial-gradient(circle, #ffffff 10%, #00f2fe 55%, #0369a1 90%);
+          box-shadow: 0 0 25px #00f2fe, 0 0 50px #00f2fe, inset 0 0 15px #ffffff;
+          animation: core-pulse 1.8s infinite ease-in-out;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .ironman-hud:hover .arc-core {
+          box-shadow: 0 0 40px #00f2fe, 0 0 80px #00f2fe, 0 0 120px #00f2fe, inset 0 0 20px #ffffff;
+          animation: core-pulse 0.8s infinite ease-in-out;
+        }
+        @keyframes spin-cw { to { transform: rotate(360deg); } }
+        @keyframes spin-ccw { to { transform: rotate(-360deg); } }
+        @keyframes core-pulse {
+          0%, 100% { transform: scale(1); filter: brightness(1); }
+          50% { transform: scale(1.08); filter: brightness(1.35); }
+        }
+
+        /* Right HUD Content */
+        .hud-content {
+          flex: 1;
+        }
+        .jarvis-title {
+          font-size: 22px;
+          font-weight: 800;
+          color: #ffffff;
+          letter-spacing: 1px;
+          text-shadow: 0 0 12px rgba(0, 242, 254, 0.7);
+          margin-bottom: 4px;
+        }
+        .jarvis-quote {
+          font-size: 12px;
+          color: #38bdf8;
+          font-style: italic;
+          margin-bottom: 16px;
+        }
+        /* Tactical Equalizer Bars */
+        .bars {
+          display: flex;
+          gap: 4px;
+          align-items: flex-end;
+          height: 18px;
+          margin-bottom: 14px;
+        }
+        .bar {
+          width: 4px;
+          background: #00f2fe;
+          border-radius: 2px;
+          animation: eq 1.2s infinite ease-in-out;
+        }
+        .bar:nth-child(2) { animation-delay: 0.15s; background: #38bdf8; }
+        .bar:nth-child(3) { animation-delay: 0.3s; background: #ff3b30; }
+        .bar:nth-child(4) { animation-delay: 0.45s; background: #fbbf24; }
+        .bar:nth-child(5) { animation-delay: 0.2s; background: #00f2fe; }
+        .bar:nth-child(6) { animation-delay: 0.35s; background: #38bdf8; }
+        .bar:nth-child(7) { animation-delay: 0.5s; background: #ff3b30; }
+        .bar:nth-child(8) { animation-delay: 0.25s; background: #00f2fe; }
+        @keyframes eq {
+          0%, 100% { height: 4px; }
+          50% { height: 18px; }
+        }
+
+        /* Tactical Cards */
+        .tac-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 10px;
+        }
+        .tac-card {
+          background: rgba(0, 242, 254, 0.05);
+          border: 1px solid rgba(0, 242, 254, 0.2);
+          border-radius: 8px;
+          padding: 8px 10px;
+          transition: all 0.3s ease;
+        }
+        .tac-card:hover {
+          background: rgba(0, 242, 254, 0.15);
+          border-color: #00f2fe;
+          box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+          transform: translateY(-2px);
+        }
+        .tac-val {
+          font-size: 13px;
+          font-weight: 700;
+          color: #ffffff;
+        }
+        .tac-lbl {
+          font-size: 9.5px;
+          color: #94a3b8;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          margin-top: 2px;
+        }
+      </style>
+
+      <div class="ironman-hud">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+        <div class="grid"></div>
+        <div class="scanline"></div>
+
+        <div class="hud-header">
+          <div><span class="stark-tag">⚡ STARK INDUSTRIES</span> &bull; <span class="arc-tag">MARK LXXXV HUD</span></div>
+          <div>CORE OUTPUT: <span style="color:#00f2fe; font-weight:800;">100% [ONLINE]</span></div>
+          <div>PROTOCOL: <span style="color:#ff3b30; font-weight:800;">J.A.R.V.I.S. ACTIVE</span></div>
+        </div>
+
+        <div class="hud-body">
+          <div class="reactor-box">
+            <div class="ring-outer"></div>
+            <div class="ring-mid"></div>
+            <div class="ring-inner"></div>
+            <div class="arc-core"></div>
+          </div>
+
+          <div class="hud-content">
+            <div class="jarvis-title">DURGA PRASAD // ARCHITECT</div>
+            <div class="jarvis-quote">"Sometimes you gotta run before you can walk." — Tony Stark</div>
+            
+            <div class="bars">
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+              <span style="font-size: 10px; color: #00f2fe; margin-left: 8px; letter-spacing: 1px;">DIAGNOSTICS: NOMINAL</span>
+            </div>
+
+            <div class="tac-grid">
+              <div class="tac-card">
+                <div class="tac-val" style="color:#00f2fe;">DURGA OS</div>
+                <div class="tac-lbl">LTS KERNEL</div>
+              </div>
+              <div class="tac-card">
+                <div class="tac-val" style="color:#ff3b30;">PARROT SEC</div>
+                <div class="tac-lbl">CONTRIBUTOR</div>
+              </div>
+              <div class="tac-card">
+                <div class="tac-val" style="color:#fbbf24;">SAILESH SPY</div>
+                <div class="tac-lbl">SNIFFER ON</div>
+              </div>
+              <div class="tac-card">
+                <div class="tac-val" style="color:#34d399;">SECURITY</div>
+                <div class="tac-lbl">SHIELD 100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
