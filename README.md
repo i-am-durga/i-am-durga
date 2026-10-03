@@ -116,6 +116,53 @@
 
 ---
 
+## 🌐 Upstream Open-Source Contributions & Security Research
+
+<table>
+  <thead>
+    <tr>
+      <th>Project / Organization</th>
+      <th>Platform</th>
+      <th>Contribution / Pull Request</th>
+      <th>Impact & Focus Area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>Parrot Security OS</b><br/><code>parrotsec/web/documentation</code></td>
+      <td><img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"/></td>
+      <td><a href="https://gitlab.com/parrotsec/web/documentation/-/merge_requests/89"><b>MR #89</b>: AppArmor Service Recovery Guide</a></td>
+      <td>Troubleshooting guide for AppArmor parser errors & broken container runtimes.</td>
+    </tr>
+    <tr>
+      <td><b>Parrot Security OS</b><br/><code>parrotsec/packages/parrot-core</code></td>
+      <td><img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"/></td>
+      <td><a href="https://gitlab.com/parrotsec/packages/parrot-core/-/merge_requests/17"><b>MR #17</b>: Preserve User Dotfiles on Upgrade</a></td>
+      <td>Fixes post-install skel migration overwriting custom <code>.bashrc</code> and <code>.profile</code>.</td>
+    </tr>
+    <tr>
+      <td><b>Parrot Security OS</b><br/><code>calamares-settings-parrot</code></td>
+      <td><img src="https://img.shields.io/badge/GitLab-FC6D26?style=flat-square&logo=gitlab&logoColor=white"/></td>
+      <td><a href="https://gitlab.com/parrotsec/packages/calamares-settings-parrot/-/merge_requests/3"><b>MR #3</b>: Preserve Custom Hostname</a></td>
+      <td>Ensures installer honors user-configured hostnames rather than forcing default.</td>
+    </tr>
+    <tr>
+      <td><b>ProjectDiscovery</b><br/><code>nuclei-templates</code></td>
+      <td><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></td>
+      <td><a href="https://github.com/projectdiscovery/nuclei-templates/pull/17363"><b>PR #17363</b>: SMB Anonymous Access ListDir Validation</a></td>
+      <td>Eliminates false-positive detections by verifying guest SMB read permissions.</td>
+    </tr>
+    <tr>
+      <td><b>SigmaHQ</b><br/><code>sigma</code></td>
+      <td><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/></td>
+      <td><a href="https://github.com/SigmaHQ/sigma/pull/6420"><b>PR #6420</b>: Schedule.Service COM Object Evasion Rule</a></td>
+      <td>Closes defense evasion gap for COM-based PowerShell Scheduled Task persistence.</td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
 ## 🧰 `cat /etc/security_arsenal.conf`
 
 <details open>
